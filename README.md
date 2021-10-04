@@ -33,6 +33,9 @@ Follow this example tutorial to run an ML backend with a simple text classifier:
    ```bash
    cd label-studio-ml-backend
    
+   # Install the latest pip version to avoid goccle core utils packacge compat issue
+   python -m pip install --upgrade pip
+   
    # Install label-studio-ml and its dependencies
    pip install -U -e .
    
