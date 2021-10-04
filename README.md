@@ -29,6 +29,7 @@ Follow this example tutorial to run an ML backend with a simple text classifier:
 1. Setup environment
     
     It is highly recommended to use `venv`, `virtualenv` or `conda` python environments. You can use the same environment as Label Studio does. [Read more](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments) about creating virtual environments via `venv`.
+    You'll need python 3.7 to ensure compatibility with the example dependancies.
    ```bash
    cd label-studio-ml-backend
    
