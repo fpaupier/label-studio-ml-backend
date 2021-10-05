@@ -1,0 +1,3 @@
+[submodule "label_studio_ml/examples/yolo"]
+	path = label_studio_ml/examples/yolo
+	url = git@github.com:ultralytics/yolov5.git
