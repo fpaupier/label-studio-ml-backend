@@ -45,11 +45,12 @@ class ObjectDetector(LabelStudioMLBase):
             preds.append(pred)
             print(pred)
             num_preds: int = len(pred['result'])
-            # for i in range(num_preds):
-            #     print(pred['result'][i])
-            #     pred['result'][i] = from_name
-            #     pred['result'][i] = to_name
-            #     print(pred['result'][i])
+            for i in range(num_preds):
+                print(pred['result'][i])
+                pred['result'][i]['id'] = f'result{i}'
+                pred['result'][i]['from_name'] = from_name
+                pred['result'][i]['to_name'] = to_name
+                print(pred['result'][i])
 
         print('RETURNING:', preds)
         return preds
